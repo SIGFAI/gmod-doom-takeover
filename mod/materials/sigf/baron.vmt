@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "sigf/baron"
+	"$model" "1"
+	"$alphatest" "1"
+}

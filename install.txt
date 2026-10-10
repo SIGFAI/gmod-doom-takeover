@@ -1,0 +1,1 @@
+Unzip the mod folder into garrysmod/addons/ as its own folder, start Sandbox on any map, and the Doom look, demons, barrels and the BFG 9000 (in the Weapons tab) are there.

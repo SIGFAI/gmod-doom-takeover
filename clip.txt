@@ -1,0 +1,7 @@
+Moments the clip must show (tick only when seen in the preview):
+[x] 1. Retro Doom look: pixelated screen, status bar with marine face, title logo, marines fighting imps that throw fireballs
+[x] 2. Shotgun blasts imps: blood, flash, gibs, kill streak text (the game's weapons hurt the demons)
+[x] 3. Explosive barrels chain-explode next to a demon pack
+[x] 4. Gravity gun punts a barrel into the demons (GMod physics meets Doom monsters)
+[x] 5. Cacodemon (real 3D model) floats in, then the BFG 9000 green ball zaps every demon in sight
+Weak: BFG held model is dark and the ball hits fast; gravity-gun punt is staged by throwing the barrel.
