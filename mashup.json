@@ -1,0 +1,308 @@
+{
+  "id": "sigf/gmod-doom-takeover",
+  "version": "1.0.0",
+  "name": "Doom Takeover",
+  "tagline": "Bring Doom into the game in the most visible and funny way. The change shows in the first 30 seconds of play.",
+  "kind": "mashup",
+  "games": [
+    {
+      "game": "gmod",
+      "role": "host",
+      "engine": "Garry's Mod (Source, 64-bit branch) + Lua addon, Sandbox listen server",
+      "apps": {
+        "steam": "4000"
+      }
+    },
+    {
+      "game": "doom",
+      "role": "guest",
+      "label": "Doom"
+    }
+  ],
+  "requires": [],
+  "install": [
+    {
+      "game": "gmod",
+      "strategy": "profile",
+      "files": [
+        {
+          "src": "gmod-doom-takeover-addon-kit.zip",
+          "dst": "{game}/garrysmod/addons/sigf_doom_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "lua/autorun/sigf_kit.lua",
+              "sha256": "997f9cd687a37c26ae0224699ee0b189367e9ab2b232acca7c8c9829459882f7"
+            },
+            {
+              "path": "lua/sigf_kit/cl_bricks.lua",
+              "sha256": "a78651503449000a81bf348477ec9a5867452e42f1848021632798ef6c63918e"
+            },
+            {
+              "path": "lua/sigf_kit/cl_stage.lua",
+              "sha256": "b4a53055318568a93674697ad487dbd747c013c0ce20cd320f67cc6248f71f8c"
+            },
+            {
+              "path": "lua/sigf_kit/sh_bricks.lua",
+              "sha256": "29f773258c2c750a05ec6a8a72abfc58e9d59cff2fddc456750ebbcbc05d42a3"
+            },
+            {
+              "path": "lua/sigf_kit/sh_stage.lua",
+              "sha256": "04fac2c59696deddef5bb7ec8fe005f3233a09b4df5d8743a7037fdfdf701b75"
+            },
+            {
+              "path": "lua/sigf_kit/sv_bricks.lua",
+              "sha256": "ce18b8dfe3d4338580f872013bae90218b7fd023b58699bd8ef770fbf61e0c49"
+            },
+            {
+              "path": "lua/sigf_kit/sv_stage.lua",
+              "sha256": "42998cfb11d034a692e2cc58a476d0fd90717419a67c74af554e07e568e9bda0"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/gmod-doom-takeover/releases/download/v1.0.0/gmod-doom-takeover-addon-kit.zip",
+          "sha256": "de090fbbc1ae7562f642d8c6a97e17bcb6619407cf4b246c8dbc071b3e5dfae6",
+          "size": 18083
+        },
+        {
+          "src": "gmod-doom-takeover.zip",
+          "dst": "{game}/garrysmod/addons/sigf_doom_takeover",
+          "unpack": true,
+          "contents": [
+            {
+              "path": "lua/autorun/sigf_kit.lua",
+              "sha256": "997f9cd687a37c26ae0224699ee0b189367e9ab2b232acca7c8c9829459882f7"
+            },
+            {
+              "path": "lua/sigf_kit/cl_bricks.lua",
+              "sha256": "a78651503449000a81bf348477ec9a5867452e42f1848021632798ef6c63918e"
+            },
+            {
+              "path": "lua/sigf_kit/cl_stage.lua",
+              "sha256": "b4a53055318568a93674697ad487dbd747c013c0ce20cd320f67cc6248f71f8c"
+            },
+            {
+              "path": "lua/sigf_kit/sh_bricks.lua",
+              "sha256": "29f773258c2c750a05ec6a8a72abfc58e9d59cff2fddc456750ebbcbc05d42a3"
+            },
+            {
+              "path": "lua/sigf_kit/sh_stage.lua",
+              "sha256": "04fac2c59696deddef5bb7ec8fe005f3233a09b4df5d8743a7037fdfdf701b75"
+            },
+            {
+              "path": "lua/sigf_kit/sv_bricks.lua",
+              "sha256": "ce18b8dfe3d4338580f872013bae90218b7fd023b58699bd8ef770fbf61e0c49"
+            },
+            {
+              "path": "lua/sigf_kit/sv_stage.lua",
+              "sha256": "42998cfb11d034a692e2cc58a476d0fd90717419a67c74af554e07e568e9bda0"
+            },
+            {
+              "path": "lua/sigf_mod/cl.lua",
+              "sha256": "8ad0390f3501e7546a35abaa88521beb56e0027911220283b1a7c1fb5e7a6698"
+            },
+            {
+              "path": "lua/sigf_mod/demo.lua",
+              "sha256": "fe0c402477969a78a13077daa090b8682a9dea0cd627b90a8fa624a782de6b93"
+            },
+            {
+              "path": "lua/sigf_mod/sh.lua",
+              "sha256": "5781522bff4672733ecbcd3ed1f8be7a11791cd0c6035c539aec6efd37be3297"
+            },
+            {
+              "path": "lua/sigf_mod/sv.lua",
+              "sha256": "c20fb80ab55f2ee245fc3c0dd74a8b8452ae0739faf569263359cdabad386dc5"
+            },
+            {
+              "path": "materials/sigf/baron.vmt",
+              "sha256": "78b3d1a8c426a3a0a159391a99f6d8fe50dd24e143fa24d04ce667a9598dee93"
+            },
+            {
+              "path": "materials/sigf/baron.vtf",
+              "sha256": "c19031d64ed4137d06c7f441fd93f1207d0d72d03dd1f1faeeb60f69134adddb"
+            },
+            {
+              "path": "materials/sigf/bfg.vmt",
+              "sha256": "51f348f142ff67746fd62924094a3afe281f9889d4751ddcf1f232a12fb83585"
+            },
+            {
+              "path": "materials/sigf/bfg.vtf",
+              "sha256": "939da91e89e3d5ed258e9ac95ac8d42439d41ca816b85f74479fade07d54ebf1"
+            },
+            {
+              "path": "materials/sigf/cacodemon.vmt",
+              "sha256": "c95ab49c519f406f88e9053c49222d9a0a9c5c76334821fdc53aea31352b817a"
+            },
+            {
+              "path": "materials/sigf/cacodemon.vtf",
+              "sha256": "3c01e93141a25c92943b515a94f0140e4e9a06cde16ca8f0ecd3d2baaba3629f"
+            },
+            {
+              "path": "materials/sigf/face_grin.vmt",
+              "sha256": "9bc78a4087ef8303f357c0f081f3cf5e8342bbe60980cb2804c60c248fead233"
+            },
+            {
+              "path": "materials/sigf/face_grin.vtf",
+              "sha256": "a0bc64cfb8a3ee79a766af377e1441b89ce3bb3665aab5bf5522ff6965cd49ba"
+            },
+            {
+              "path": "materials/sigf/face_hurt.vmt",
+              "sha256": "566a8c324acce1b81598e2fa57c38284e34b940c8213c7fafa71d2908b5deee6"
+            },
+            {
+              "path": "materials/sigf/face_hurt.vtf",
+              "sha256": "efa5648c0067283a0bd00f32095e9f4be31114a892d4837c5650239d1989746a"
+            },
+            {
+              "path": "materials/sigf/face_ok.vmt",
+              "sha256": "8689b6f685371e28e7b956712bb794976043cd04f2ea7254b2990dd30fe5f589"
+            },
+            {
+              "path": "materials/sigf/face_ok.vtf",
+              "sha256": "6e51e6aebfec04827b539124e0fcd51762a42900aff945cc6334d311c9bb2c71"
+            },
+            {
+              "path": "materials/sigf/flash_green.vmt",
+              "sha256": "3fc79c91cc703632d73176e407e51a63e9dccd7aa2b1f186f1b0d2d4e0393352"
+            },
+            {
+              "path": "materials/sigf/flash_green.vtf",
+              "sha256": "019abbddbe19044e60c115397735df70187bf18d8d3404064c84689b8568790e"
+            },
+            {
+              "path": "materials/sigf/flash_red.vmt",
+              "sha256": "9decdffee0b40da60147886f9782f4b7d343f25632d6038a1f1461d0da47b952"
+            },
+            {
+              "path": "materials/sigf/flash_red.vtf",
+              "sha256": "dbad22238fbff341d325db521037d484a24526689c3ac540d6f4b98327f58141"
+            },
+            {
+              "path": "materials/sigf/imp.vmt",
+              "sha256": "532450454725d3b6c69d1b86ad405128988a2c17167484b6a2febaef75cf78d5"
+            },
+            {
+              "path": "materials/sigf/imp.vtf",
+              "sha256": "50ea94a1993d07d65eefc6a47c8b2c5c77f6c434401cce59c2bb8bbfcb93861d"
+            },
+            {
+              "path": "materials/sigf/logo.vmt",
+              "sha256": "07e1501d36e5c0add393b8bb690932f81200da5d193086719c3f81311ffb86c9"
+            },
+            {
+              "path": "materials/sigf/logo.vtf",
+              "sha256": "1cf67852029f771ca8ce1a9a6becf7a1e61eddf8353e194e0d497cd79eae2ecc"
+            },
+            {
+              "path": "materials/sigf/marine.vmt",
+              "sha256": "dea7398321c72035d7b66515f9b0ef4f6deacb48e7594c44d896f5a13c7b2b25"
+            },
+            {
+              "path": "materials/sigf/marine.vtf",
+              "sha256": "b69a22ed0204783b2292de3bd15b00d78640fac23b190b0acf3ca35eb92eaa4b"
+            },
+            {
+              "path": "materials/sigf/pinky.vmt",
+              "sha256": "2585253ca6bb76bde9c57148328c07d4c0dca63172b44880fba8c537bf348840"
+            },
+            {
+              "path": "materials/sigf/pinky.vtf",
+              "sha256": "14056ff0a07247b144f18585f0d4802cbbaca5187de307f1b2a309640cfe253f"
+            },
+            {
+              "path": "models/sigf/bfg.dx90.vtx",
+              "sha256": "87a36a95609b58fb59fd712684314afa718e4169a20c1819432ce80b106cf6de"
+            },
+            {
+              "path": "models/sigf/bfg.mdl",
+              "sha256": "60231f3b208f47e3e3802e9d243e41a6c4d175f2a32cbf6a47c901be9f09188c"
+            },
+            {
+              "path": "models/sigf/bfg.phy",
+              "sha256": "5feaaa76610968d061f2d4dadcf7925b917b61ed8904c5b83448dd2488a71459"
+            },
+            {
+              "path": "models/sigf/bfg.vvd",
+              "sha256": "e174c21e2f2ed05497ca9220b77d5bf39f712b259d5d32bdc8b74f942b80876a"
+            },
+            {
+              "path": "models/sigf/cacodemon.dx90.vtx",
+              "sha256": "e55e6ba44b8cc817c63111b12254a95477c1a8f38b6f8738c57ed02791e5ccb0"
+            },
+            {
+              "path": "models/sigf/cacodemon.mdl",
+              "sha256": "c8c4ef1563e0adc5fa5a5c8d070207e98643f025970e9b832043ff0771ea5039"
+            },
+            {
+              "path": "models/sigf/cacodemon.phy",
+              "sha256": "754e74b0356146e1d2a5f440176ea5d6fd0c17b693ad89a64835641ed10e0743"
+            },
+            {
+              "path": "models/sigf/cacodemon.vvd",
+              "sha256": "3779cdc65158af07392aabd539efe8e34221a744fb720f98574db8efca21ec43"
+            },
+            {
+              "path": "sound/sigf/death.wav",
+              "sha256": "017aabccc8dea850011c3adc92676c7d5b4670db347e7b80eaa2403e032b62c4"
+            },
+            {
+              "path": "sound/sigf/e1m1.wav",
+              "sha256": "f3ed93fc2eede0b18153205293b52cd6afe8fb4316482744d102f574d8d29751"
+            },
+            {
+              "path": "sound/sigf/fireball.wav",
+              "sha256": "93996a620819f6ac586bc08ab29dec2697f30dec49cd7e5e9e6f59e0991737bc"
+            },
+            {
+              "path": "sound/sigf/growl.wav",
+              "sha256": "5c9758e28b29a6aff5a0cffe4c18ed09e21ee489a55a8be32afa18f7b26e4e4f"
+            },
+            {
+              "path": "sound/sigf/ssg.wav",
+              "sha256": "906224f3eafb8eb4ba1b6954c96a7682cbf15f9f0a9404183b0faa48634aba2a"
+            }
+          ],
+          "url": "https://github.com/SIGFAI/gmod-doom-takeover/releases/download/v1.0.0/gmod-doom-takeover.zip",
+          "sha256": "a282f3b754e8a678728c045ab302922c44c1b65c8a6bbad7092b356cd3dbd4f0",
+          "size": 13438108
+        }
+      ]
+    }
+  ],
+  "launch": [
+    {
+      "game": "gmod",
+      "args": []
+    }
+  ],
+  "files": [
+    {
+      "name": "gmod-doom-takeover-addon-kit.zip",
+      "url": "https://github.com/SIGFAI/gmod-doom-takeover/releases/download/v1.0.0/gmod-doom-takeover-addon-kit.zip",
+      "sha256": "de090fbbc1ae7562f642d8c6a97e17bcb6619407cf4b246c8dbc071b3e5dfae6",
+      "size": 18083
+    },
+    {
+      "name": "gmod-doom-takeover.zip",
+      "url": "https://github.com/SIGFAI/gmod-doom-takeover/releases/download/v1.0.0/gmod-doom-takeover.zip",
+      "sha256": "a282f3b754e8a678728c045ab302922c44c1b65c8a6bbad7092b356cd3dbd4f0",
+      "size": 13438108
+    }
+  ],
+  "source": {
+    "repo": "https://github.com/SIGFAI/gmod-doom-takeover",
+    "license": "MIT"
+  },
+  "media": {
+    "clip": "https://sigf.ai/clips/2026-10-10-42c1ec07.mp4"
+  },
+  "built_by": {
+    "agent": "SIGF",
+    "model": "claude-opus-5.5"
+  },
+  "idea_by": "team",
+  "kit": {
+    "id": "gmod",
+    "status": "draft"
+  },
+  "built_at": "2026-10-10T08:40:44.438Z"
+}
